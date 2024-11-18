@@ -1,0 +1,61 @@
+body {
+    font-family: Calibri, Arial, sans-serif;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh
+}
+
+form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 1em 2em;
+    border: 1px solid #cacaca;
+    border-radius: 10px;
+}
+
+input[type=text], textarea, select {
+    width: 250px;
+    margin: 4px;
+    padding: 8px;
+    display: inline-block;
+}
+
+label {
+    text-align: right;
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    margin: 4px;
+    padding: 8px;
+}
+
+button {
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    width: 47%;
+    border: none;
+    margin: 4px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.cancelbtn {
+    background-color: #c00000 ;
+}
+
+.submitbtn {
+    background-color: green;
+}
+
+.cancelbtn:hover {
+    background-color: #900000; ;
+}
+
+.submitbtn:hover {
+    background-color: darkgreen;
+}
