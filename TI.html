@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css" />
+    <title>Workshop Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Workshop Registration</h1>
+        <form>
+            <label for="txtname">Name</label>
+            <input type="txt" id="txtname" name="txtname" required/>
+            <br/>
+
+            <label for="txtemail">Email</label>
+            <input type="txt" id="txtemail" name="txtemail" required/>
+            <br/>
+
+            <label for="txtaddress">Address</label>
+            <textarea id="txtadress" name="txtadress" rows="4" cols="30" required></textarea>
+            <br/>
+
+            <label for="age">Age</label>
+            <select id="age" name="age" required>
+                <option value="" disabled selected> -Select Age- </option>
+                <option value="under_18">Under 17</option>
+                <option value="18_25">17-25</option>
+                <option value="26_35">26-35</option>
+                <option value="over_5">Over 35</option>
+            </select>
+            <br/>
+            <br/>
+
+            <div class="button">
+                <button type="reset" class="cancelbtn">Reset</button>
+                <button type="submit" class="submitbtn">Submit Form</button>
+            </div>
+        </form>
+    </body>
+</html>
