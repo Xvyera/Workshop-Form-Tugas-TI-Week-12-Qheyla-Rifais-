@@ -1,9 +1,6 @@
 body {
-    font-family: Calibri, Arial, sans-serif;
     background-color: #ffffff;
     width: 100%;
-    padding: 10px 20px;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,10 +13,10 @@ form {
     padding: 1em 2em;
     border: 1px solid #cacaca;
     border-radius: 10px;
+    font-family: Calibri, Arial, sans-serif;
 }
 
-input[type=text], textarea, select {
-    width: 250px;
+input, textarea, select, label {
     margin: 4px;
     padding: 8px;
     display: inline-block;
@@ -32,6 +29,9 @@ label {
     vertical-align: top;
     margin: 4px;
     padding: 8px;
+}
+input, textarea, select {
+    width: 250px;
 }
 
 button {
