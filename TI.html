@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/styles.css" />
+    <script type="text/javascript" src="validaation.js" defer></script>
     <title>Workshop Registration</title>
+    <style>
+        .required::after {
+            content:" *";
+            color: red
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="message"></div>
+        <form id="form">
         <h1>Workshop Registration</h1>
-        <form>
-            <label for="txtname">Name</label>
-            <input type="txt" id="txtname" name="txtname" required/>
+            <label for="txtname" class="required">Name</label>
+            <input type="txt" id="txtname" name="txtname"/>
             <br/>
 
-            <label for="txtemail">Email</label>
-            <input type="txt" id="txtemail" name="txtemail" required/>
+            <label for="txtemail" class="required">Email</label>
+            <input type="txt" id="txtemail" name="txtemail"/>
             <br/>
 
             <label for="txtaddress">Address</label>
-            <textarea id="txtadress" name="txtadress" rows="4" cols="30" required></textarea>
+            <textarea id="txtadress" name="txtadress" rows="4" cols="30"></textarea>
             <br/>
 
             <label for="age">Age</label>
-            <select id="age" name="age" required>
+            <select id="age" name="age">
                 <option value="" disabled selected> -Select Age- </option>
                 <option value="under_18">Under 17</option>
                 <option value="18_25">17-25</option>
@@ -34,8 +41,8 @@
             <br/>
 
             <div class="button">
-                <button type="reset" class="cancelbtn">Reset</button>
-                <button type="submit" class="submitbtn">Submit Form</button>
+                <button type="reset" class="cancelbtn" onclick="resetForm">Reset</button>
+                <button type="submit" class="submitbtn" onabort="submitForm">Submit Form</button>
             </div>
         </form>
     </body>
